@@ -46,6 +46,7 @@ public class ConducteurServiceImpl implements ConducteurService {
 		conducteur.setNom(updatedConducteur.getNom());
 		conducteur.setPrenom(updatedConducteur.getPrenom());
 		conducteur.setPermis(updatedConducteur.getPermis());
+		conducteur.setTelephone(updatedConducteur.getTelephone());
 		Conducteur updateConducteurObj= conducteurRepository.save(conducteur);
 		return ConducteurMapper.mapToConducteurDto(updateConducteurObj);
 	}

@@ -8,7 +8,9 @@ public class ConducteurMapper {
 				conducteur.getId(),
 				conducteur.getNom(),
 				conducteur.getPrenom(),
-				conducteur.getPermis());
+				conducteur.getPermis(),
+				conducteur.getTelephone(),
+				conducteur.isDisponible());
 	}
 	
 	public static Conducteur mapToConducteur(ConducteurDto conducteurDto) {
@@ -16,7 +18,9 @@ public class ConducteurMapper {
 				conducteurDto.getId(),
 				conducteurDto.getNom(),
 				conducteurDto.getPrenom(),
-				conducteurDto.getPermis());
+				conducteurDto.getPermis(),
+				conducteurDto.getTelephone(),
+				conducteurDto.isDisponible());
 	}
 
 }
